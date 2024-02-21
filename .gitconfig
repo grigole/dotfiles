@@ -1,0 +1,22 @@
+[user]
+	email = grigole@gvrsoft.com
+	name = Greg Rigole
+[cola]
+	spellcheck = false
+[filesystem "AdoptOpenJDK|11.0.4|/dev/mapper/vg1_hdd-home"]
+	timestampResolution = 12000 nanoseconds
+	minRacyThreshold = 1821 microseconds
+[filesystem "AdoptOpenJDK|11.0.5|/dev/mapper/vg1_hdd-home"]
+	timestampResolution = 12000 nanoseconds
+	minRacyThreshold = 1675 microseconds
+[filesystem "AdoptOpenJDK|11.0.7|/dev/mapper/vg1_hdd-home"]
+	timestampResolution = 8000 nanoseconds
+	minRacyThreshold = 1537 microseconds
+[filesystem "AdoptOpenJDK|11.0.8|/dev/mapper/vg1_hdd-home"]
+	timestampResolution = 23000 nanoseconds
+	minRacyThreshold = 1061 microseconds
+[filesystem "Eclipse Adoptium|11.0.13|/dev/mapper/vg1_hdd-home"]
+	timestampResolution = 21000 nanoseconds
+	minRacyThreshold = 1193 microseconds
+[credential]
+	credentialStore = gpg
