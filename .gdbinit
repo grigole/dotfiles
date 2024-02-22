@@ -1,7 +1,7 @@
 #
 # For kernel debugging.
 #
-add-auto-load-safe-path		/work/grigole/linux-4.20.6-gentoo/scripts/gdb/vmlinux-gdb.py
+# add-auto-load-safe-path		/work/grigole/linux-4.20.6-gentoo/scripts/gdb/vmlinux-gdb.py
 
 #
 # Print things nicely.
