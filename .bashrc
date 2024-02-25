@@ -19,7 +19,7 @@ alias more='less'
 alias vi='nvim'
 
 # Navigation
-. ~/.alias_nav
+. ~/.bashrc_nav
 
 # Tmux stuff
 . ~/.bashrc_tmux
