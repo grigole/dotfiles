@@ -51,9 +51,10 @@ return require('packer').startup(function(use)
 		}
 	}
 
-	-- Eye-Candy
 	use( 'vim-airline/vim-airline' )
 	use( 'j-hui/fidget.nvim' )
+
+	-- Eye-Candy
 	use{ "catppuccin/nvim", as = "catppuccin" }
 
 	use( 'christoomey/vim-tmux-navigator')
