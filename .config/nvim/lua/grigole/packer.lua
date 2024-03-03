@@ -30,12 +30,14 @@ return require('packer').startup(function(use)
 	use( 'mbbill/undotree' )
 	use( 'tpope/vim-fugitive' )
 
+		-- 'VonHeikemen/lsp-zero.nvim',
+		-- branch = 'v2.x',
+
 	use {
-		'VonHeikemen/lsp-zero.nvim',
-		branch = 'v2.x',
+		-- LSP Support
+	    {'neovim/lsp-zero'},
 		requires = {
-			-- LSP Support
-			{'neovim/nvim-lspconfig'},
+		    {'neovim/nvim-lspconfig'},
 			{'williamboman/mason.nvim'},
 			{'williamboman/mason-lspconfig.nvim'},
 
