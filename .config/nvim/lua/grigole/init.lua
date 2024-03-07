@@ -1,3 +1,3 @@
 require("grigole.remap")
-require("grigole.packer")
+require("grigole.lazy")
 require("grigole.set")
