@@ -40,7 +40,7 @@ require('lazy').setup {
 },
 
 	-- Eye-Candy
-	{ "catppuccin/nvim", as = "catppuccin" },
+-- { "catppuccin/nvim", as = "catppuccin" },
 
 	{ "mbbill/undotree" },
 	{ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' },
