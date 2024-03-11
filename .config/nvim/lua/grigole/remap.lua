@@ -36,10 +36,3 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
-
-vim.keymap.set('n', "<leader>vwm", function()
-    require("vim-with-me").StartVimWithMe()
-end)
-vim.keymap.set('n', '<leader>svwm', function()
-    require('vim-with-me').StopVimWithMe()
-end)

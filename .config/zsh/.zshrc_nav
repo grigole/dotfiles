@@ -1,0 +1,20 @@
+# Naviagtion (cd) for commonly used directories
+#
+# Feb 22 2024 - Greg Rigole
+# - updated after rearrangement for new 8 TB hard drive
+
+alias amiga='cd /mnt/windows/w/Amiga'
+alias downloads='cd /mnt/windows/w/GregR/Downloads'
+alias eclipse='cd ~/src/eclipse'
+alias linux='cd /usr/src/linux'
+alias nvim_config='cd ~/.config/nvim'
+alias portage='cd /usr/portage'
+alias profiles='cd /usr/portage/profiles'
+alias sixpack='cd /mnt/windows/w/hercules/vm/sixpack_1.3'
+alias src='cd ~/src'
+alias tk4='cd /mnt/windows/w/hercules/vm/turnkey'
+alias tmp_portage='cd /var/tmp/portage'
+alias vm='cd /mnt/windows/w/hercules/mvs'
+alias work='cd /work/grigole'
+
+alias music='cd /mnt/windows/s/Greg\ Rigole/Music'
