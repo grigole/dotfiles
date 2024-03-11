@@ -16,10 +16,16 @@ compinit
 setopt ignoreeof
 setopt prompt_subst
 
+export LC_ALL=en_US.UTF-8
+
 # Necessary for colours in prompts
 autoload -Uz colors && colors
 
-PS1="%{${fg_bold[green]}%}%n@%m %{${fg_bold[blue]}%}%3~ $ $reset_color"
+# Make sure all non-printing escape codes are inside %{%} pairs. If
+# you don't, zsh loses track of the visible prompt length and doing
+# completopns shifts the ZLE line to the right, which is f**ing
+# annoying!
+PS1="(zsh) %{${fg_bold[green]}%}%n@%m %{${fg_bold[blue]}%}%3~ $ %{$reset_color%}"
 
 alias gemacs='/usr/bin/emacs'
 alias emacs='emacs -nw'
