@@ -1,0 +1,2 @@
+# Start the SSH agent
+eval "$(ssh-agent -s)"

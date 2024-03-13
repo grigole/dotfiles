@@ -1,16 +1,21 @@
-HISTFILE=~/.config/zsh/.histfile
+HISTFILE=$ZDOTDIR/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 bindkey -v
 
 zstyle :compinstall filename '$ZDOTDIR/.zshrc'
 
+# Use cache for slow bits
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path $ZDOTDIR/.zshcache
+
 autoload -Uz compinit && compinit
 
 setopt ignoreeof
 setopt prompt_subst
 setopt beep extendedglob nomatch
-setopt vi
+setopt hist_verify
+setopt sharehistory
 
 unsetopt autocd notify
 
@@ -24,7 +29,7 @@ autoload -Uz colors && colors
 # you don't, zsh loses track of the visible prompt length and doing
 # completopns shifts the ZLE line to the right, which is f**ing
 # annoying!
-PS1="(zsh) %{${fg_bold[green]}%}%n@%m %{${fg_bold[blue]}%}%3~ $ %{$reset_color%}"
+PS1="%{${fg_bold[green]}%}%n@%m %{${fg_bold[blue]}%}%3~ %(!.#.$) %{$reset_color%}"
 
 alias gemacs='/usr/bin/emacs'
 alias emacs='emacs -nw'
@@ -77,5 +82,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 source ~/.cargo/env
+
+source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
 
 eval "$(zoxide init zsh --cmd cd)"
