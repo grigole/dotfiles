@@ -39,7 +39,7 @@ alias emacsima='gemacs -f imaxima'
 alias df='df -h'
 alias du='du -sh'
 
-alias h='history'
+alias h='history 0'
 
 alias ls='ls --color=auto -F'
 alias ll='ls -l'
