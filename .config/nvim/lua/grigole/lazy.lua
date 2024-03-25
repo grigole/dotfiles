@@ -435,6 +435,8 @@ end,
 dependencies = {
 	-- Creates a beautiful debugger UI
 	'rcarriga/nvim-dap-ui',
+	-- This was suddenly required by an update on Mar 23 2024...
+	'nvim-neotest/nvim-nio',
 
 	-- Installs the debug adapters for you
 	'williamboman/mason.nvim',

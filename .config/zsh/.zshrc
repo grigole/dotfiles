@@ -85,4 +85,5 @@ source ~/.cargo/env
 
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
 
+source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
 eval "$(zoxide init zsh --cmd cd)"
