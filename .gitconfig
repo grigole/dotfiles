@@ -20,3 +20,5 @@
 	minRacyThreshold = 1193 microseconds
 [credential]
 	credentialStore = gpg
+[init]
+	defaultBranch = main
