@@ -22,3 +22,5 @@
 	credentialStore = gpg
 [init]
 	defaultBranch = main
+[diff]
+	tool = nvimdiff

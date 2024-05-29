@@ -1,0 +1,6 @@
+*.[ao]
+*~
+lazy-lock.json
+.histfile
+.zcompdump
+tmux-continuum
