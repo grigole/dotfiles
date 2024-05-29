@@ -24,3 +24,5 @@
 	defaultBranch = main
 [diff]
 	tool = nvimdiff
+[pull]
+	ff = only
