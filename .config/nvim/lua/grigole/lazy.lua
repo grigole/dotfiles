@@ -32,10 +32,38 @@ require('lazy').setup {
 		vim.g.airline_right_sep = ''
 		vim.g.airline_right_alt_sep = ''
 	end,
-},
+	},
 { 'vim-airline/vim-airline-themes' },
 
 { 'j-hui/fidget.nvim' },
+
+-- Useful for getting pretty icons, but requires special font.
+--  If you already have a Nerd Font, or terminal set up with fallback fonts
+--  you can enable this
+{ 'nvim-tree/nvim-web-devicons' },
+
+{ 'stevearc/oil.nvim',
+
+	dependencies = { "nvim-tree/nvim-web-devicons" },
+	config = function()
+		require('oil').setup {
+			columns = { "icon" },
+			keymaps = {
+				["<C-h>"] = false,
+				["<M-h>"] = "actions.select_split",
+			},
+			view_options = {
+				show_hidden = true,
+			},
+			-- Allow netrw to work with <leader>pv
+			default_file_explorer = false,
+		}
+
+		vim.keymap.set( "n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" } );
+		vim.keymap.set( "n", "<leader>-", require('oil').toggle_float );
+
+	end,
+},
 
 -- See `:help gitsigns` to understand what the configuration keys do
 -- Adds git related signs to the gutter, as well as utilities for managing changes
@@ -78,11 +106,6 @@ opts = {
 		end,
 	},
 	{ 'nvim-telescope/telescope-ui-select.nvim' },
-
-	-- Useful for getting pretty icons, but requires special font.
-	--  If you already have a Nerd Font, or terminal set up with fallback fonts
-	--  you can enable this
-	{ 'nvim-tree/nvim-web-devicons' }
 },
 
 { "ThePrimeagen/harpoon",
