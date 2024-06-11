@@ -1,14 +1,6 @@
 -- ... this file is filled with pain
 
 return {
---[[  {
-    lazy = false,
-    priority = 1000,
-    dir = "~/plugins/colorbuddy.nvim",
-    config = function()
-      vim.cmd.colorscheme "gruvbuddy"
-    end,
-  }, --]]
   "rktjmp/lush.nvim",
   "tckmn/hotdog.vim",
   "dundargoc/fakedonalds.nvim",

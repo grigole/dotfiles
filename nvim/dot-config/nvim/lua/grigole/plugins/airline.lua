@@ -16,5 +16,5 @@ return {
 		vim.g.airline_right_alt_sep = ''
 	end,
 	},
-	{ 'vim-airline/vim-airline-themes' },
+	'vim-airline/vim-airline-themes',
 }
