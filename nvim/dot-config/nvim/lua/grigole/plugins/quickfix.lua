@@ -1,4 +1,5 @@
 return {
+
   {
     "kevinhwang91/nvim-bqf",
     enabled = false,
@@ -10,4 +11,5 @@ return {
     "stevearc/qf_helper.nvim",
     opts = {},
   },
+
 }
