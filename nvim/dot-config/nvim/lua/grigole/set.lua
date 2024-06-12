@@ -30,10 +30,14 @@ vim.opt.splitbelow = true
 vim.opt.inccommand = 'split'
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 5
+vim.opt.scrolloff = 10
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
--- vim.opt.breakindent = true
+vim.opt.breakindent = true
+
+vim.opt.shada = { "'10", "<100", "s10", "h" }
+
+vim.opt.clipboard = "unnamedplus"
