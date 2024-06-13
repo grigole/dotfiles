@@ -41,3 +41,6 @@ vim.opt.breakindent = true
 vim.opt.shada = { "'10", "<100", "s10", "h" }
 
 vim.opt.clipboard = "unnamedplus"
+
+vim.g['airline#extensions#tabline#enabled'] = 1
+vim.g['airline#extensions#tabline#buffer_nr_show'] = 1
