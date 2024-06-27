@@ -1,6 +1,7 @@
 *.[ao]
 *~
 lazy-lock.json
-.histfile
-.zcompdump
+dot-histfile
+dot-zcompdump
 tmux-continuum
+tmux-yank
