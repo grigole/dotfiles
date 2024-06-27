@@ -15,7 +15,14 @@ return {
 	},
 
 	-- Highlight todo, notes, etc in comments
-	'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false },
+	{ 'folke/todo-comments.nvim',
+		dependencies = { 'nvim-lua/plenary.nvim' },
+		opts = {
+			highlight = {
+				keyword = "bg",
+			}
+		},
+	},
 
 	{ -- Collection of various small independent plugins/modules
 	'echasnovski/mini.nvim',
@@ -34,7 +41,6 @@ return {
 		-- - sd'   - [S]urround [D]elete [']quotes
 		-- - sr)'  - [S]urround [R]eplace [)] [']
 		require('mini.surround').setup()
-
 	end,
 },
 

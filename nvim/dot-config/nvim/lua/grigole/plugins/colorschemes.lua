@@ -1,6 +1,7 @@
 -- ... this file is filled with pain
 
 return {
+  "navarasu/onedark.nvim",
   "rktjmp/lush.nvim",
   "tckmn/hotdog.vim",
   "dundargoc/fakedonalds.nvim",
