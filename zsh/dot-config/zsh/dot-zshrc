@@ -1,3 +1,15 @@
+# Find and set branch name var if in git repository.
+# function git_branch_name()
+# {
+#   branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+#   if [[ $branch == "" ]];
+#   then
+#     :
+#   else
+#     echo '('$branch')'
+#   fi
+# }
+
 HISTFILE=$ZDOTDIR/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
@@ -30,6 +42,7 @@ autoload -Uz colors && colors
 # completopns shifts the ZLE line to the right, which is f**ing
 # annoying!
 PS1="%{${fg_bold[green]}%}%n@%m %{${fg_bold[blue]}%}%3~ %(!.#.$) %{$reset_color%}"
+# PS1="%{${fg_bold[green]}%}%n@%m %{${fg_bold[blue]}%}%3~ $(git_branch_name) %(!.#.$) %{$reset_color%}"
 
 alias gemacs='/usr/bin/emacs'
 alias emacs='emacs -nw'
@@ -84,6 +97,9 @@ export XDG_CACHE_HOME="$HOME/.cache"
 source ~/.cargo/env
 
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
-
 source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 eval "$(zoxide init zsh --cmd cd)"
