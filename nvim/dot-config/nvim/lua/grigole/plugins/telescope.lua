@@ -1,5 +1,6 @@
 
 return {
+
 	{
 		'nvim-telescope/telescope.nvim',
 		branch = '0.1.x',
@@ -18,7 +19,9 @@ return {
 			return vim.fn.executable 'make' == 1
 		end,
 	},
-	{ 'nvim-telescope/telescope-ui-select.nvim' },
+
+	'nvim-telescope/telescope-ui-select.nvim',
+	'jvgrootveld/telescope-zoxide',
 },
 
 }

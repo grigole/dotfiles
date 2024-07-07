@@ -1,2 +1,4 @@
 # Start the SSH agent
 eval "$(ssh-agent -s)"
+
+export TERMINAL=/usr/bin/konsole
