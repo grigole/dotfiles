@@ -1,4 +1,5 @@
 local builtin = require('telescope.builtin')
+local telescope = require('telescope')
 
 -- Primagen's stuff
 
@@ -24,7 +25,7 @@ vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Fi
 vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
 
 -- Zoxide features
-vim.keymap.set('n', '<leader>cd', require('telescope').extensions.zoxide.list, { desc = '[C]hange [D]irectory (zoxide)' })
+vim.keymap.set('n', '<leader>cd', telescope.extensions.zoxide.list, { desc = '[C]hange [D]irectory (zoxide)' })
 
 -- Slightly advanced example of overriding default behavior and theme
 vim.keymap.set('n', '<leader>/', function()
