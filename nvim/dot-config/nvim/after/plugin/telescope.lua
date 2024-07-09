@@ -8,8 +8,11 @@ vim.keymap.set('n', '<C-p>', builtin.git_files, {})
 -- Teej's stuff
 
 -- Enable telescope extensions, if they are installed
+pcall(require('telescope').load_extension, 'cheatsheet')
+pcall(require('telescope').load_extension, 'emoji')
 pcall(require('telescope').load_extension, 'fzf')
 pcall(require('telescope').load_extension, 'lazy')
+pcall(require('telescope').load_extension, 'neoclip')
 pcall(require('telescope').load_extension, 'ui-select')
 pcall(require('telescope').load_extension, 'zoxide')
 
