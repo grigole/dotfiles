@@ -1,6 +1,7 @@
 vim.g.have_nerd_font = false
 
--- vim.opt.termguicolors = true
+vim.opt.termguicolors = false
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
@@ -53,3 +54,5 @@ vim.opt.clipboard = "unnamedplus"
 
 vim.g['airline#extensions#tabline#enabled'] = 1
 vim.g['airline#extensions#tabline#buffer_nr_show'] = 1
+
+vim.cmd "colorscheme vim"
