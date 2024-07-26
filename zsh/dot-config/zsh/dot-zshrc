@@ -86,6 +86,11 @@ PERL_LOCAL_LIB_ROOT="/home/grigole/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB
 PERL_MB_OPT="--install_base \"/home/grigole/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/grigole/perl5"; export PERL_MM_OPT;
 
+# FOr Lua and luarocks
+export LUA_PATH='/usr/share/lua/5.1/?.lua;./?.lua;/usr/share/lua/5.1/?/init.lua;/usr/lib64/lua/5.1/?.lua;/usr/lib64/lua/5.1/?/init.lua;/home/grigole/.luarocks/share/lua/5.1/?.lua;/home/grigole/.luarocks/share/lua/5.1/?/init.lua;/usr/share/lua/5.1/share/lua/5.1/?.lua;/usr/share/lua/5.1/share/lua/5.1/?/init.lua'
+export LUA_CPATH='./?.so;/usr/lib64/lua/5.1/?.so;/usr/lib64/lua/5.1/loadall.so;/home/grigole/.luarocks/lib/lua/5.1/?.so;/usr/share/lua/5.1/lib/lua/5.1/?.so'
+export PATH=/home/grigole/.luarocks/bin:/usr/share/lua/5.1/bin:$PATH
+
 # For netbeans
 export netbeans_jdkhome=$JDK_HOME
 
