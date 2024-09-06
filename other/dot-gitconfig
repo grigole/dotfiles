@@ -36,3 +36,5 @@
 	pager = less -FRX
 [advice]
 	skippedCherryPicks = false
+[push]
+	autoSetupRemote = true
