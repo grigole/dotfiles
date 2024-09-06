@@ -39,7 +39,7 @@ export PROMPT_DIRTRIM=2
 export EDITOR=/usr/bin/nvim
 
 # Enable completition
-source /etc/bash/bashrc.d/bash_completion.sh
+source /usr/local/share/bash-completion/bash_completion.sh
 
 export CC65_HOME="/usr/local/share/cc65"
 
@@ -58,5 +58,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 . ~/.cargo/env
+
+eval "$(fzf --bash)"
 
 eval "$(zoxide init bash --cmd cd)"
